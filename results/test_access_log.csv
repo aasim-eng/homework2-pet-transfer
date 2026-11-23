@@ -1,0 +1,6 @@
+timestamp,approach,num_test_images,purpose
+2026-11-20T01:19:43,full_finetune,3669,final evaluation of selected model
+2026-11-20T01:21:23,head_only,3669,final evaluation of selected model
+2026-11-20T01:21:27,features_logreg,3669,final evaluation of selected model
+2026-11-20T01:21:31,features_linear_svm,3669,final evaluation of selected model
+2026-11-20T01:21:36,features_random_forest,3669,final evaluation of selected model

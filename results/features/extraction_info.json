@@ -1,0 +1,60 @@
+{
+  "feature_layer": "model.features -> model.avgpool -> flatten (before classifier)",
+  "feature_dim": 576,
+  "augmentation": "none (weight transforms for all splits)",
+  "preprocessing": {
+    "weights": "MobileNet_V3_Small_Weights.IMAGENET1K_V1",
+    "resize_size": [
+      256
+    ],
+    "crop_size": [
+      224
+    ],
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "interpolation": "InterpolationMode.BILINEAR"
+  },
+  "extraction_time_s": {
+    "train": 31.985319833001995,
+    "val": 28.953411167000013,
+    "test": 32.04741866700351
+  },
+  "extraction_time_total_s": 92.98614966700552,
+  "trainable_params_cnn": 0,
+  "total_params_cnn": 1555781,
+  "num_images": {
+    "train": 2944,
+    "val": 736,
+    "test": 3669
+  },
+  "features_dir": "results/features/arrays",
+  "determinism": {
+    "seed": 42,
+    "python_random_seeded": true,
+    "numpy_seeded": true,
+    "torch_seeded_cpu_cuda_mps": true,
+    "torch.use_deterministic_algorithms": true,
+    "deterministic_warn_only": true,
+    "cudnn.deterministic": true,
+    "cudnn.benchmark": false
+  },
+  "environment": {
+    "python": "3.11.9",
+    "torch": "2.15.0",
+    "torchvision": "0.29.2",
+    "scikit-learn": "1.9.1",
+    "numpy": "2.4.6",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "cpu": "Apple M2",
+    "gpu": "Apple MPS (integrated GPU of Apple M2)",
+    "device_used": "mps"
+  }
+}

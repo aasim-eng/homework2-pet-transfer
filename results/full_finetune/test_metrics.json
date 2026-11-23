@@ -1,0 +1,21 @@
+{
+  "approach": "full_finetune",
+  "test_acc": 0.8490051785227583,
+  "test_macro_f1": 0.846445363359889,
+  "train_acc_clean": 0.9989809782608695,
+  "val_acc": 0.8953804347826086,
+  "val_macro_f1": 0.8956967073301554,
+  "generalization_gap_train_minus_test": 0.14997579973811126,
+  "num_test_images": 3669,
+  "num_test_errors": 554,
+  "train_acc_note": "measured on training images with the plain eval transform (no augmentation), using the selected model",
+  "n_bootstrap": 2000,
+  "test_acc_ci95": [
+    0.8383755791768874,
+    0.860452439356773
+  ],
+  "test_macro_f1_ci95": [
+    0.834911527640989,
+    0.8571664824235311
+  ]
+}

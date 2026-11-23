@@ -1,0 +1,17 @@
+X_train (2944, 576), X_val (736, 576) (test not loaded)
+logreg C=0.001: train acc 0.9137 val acc 0.8505 val macroF1 0.8497 (0.1s)
+logreg C=0.01: train acc 0.9881 val acc 0.8764 val macroF1 0.8770 (0.1s)
+logreg C=0.1: train acc 1.0000 val acc 0.8655 val macroF1 0.8658 (0.2s)
+logreg C=1.0: train acc 1.0000 val acc 0.8573 val macroF1 0.8581 (0.1s)
+logreg C=10.0: train acc 1.0000 val acc 0.8628 val macroF1 0.8634 (0.0s)
+==> logreg: selected C=0.01 (val macro-F1 0.8770); tuning time 0.5s
+linear_svm C=0.0001: train acc 0.9083 val acc 0.8614 val macroF1 0.8593 (3.9s)
+linear_svm C=0.001: train acc 0.9592 val acc 0.8736 val macroF1 0.8721 (8.3s)
+linear_svm C=0.01: train acc 0.9990 val acc 0.8750 val macroF1 0.8739 (6.6s)
+linear_svm C=0.1: train acc 1.0000 val acc 0.8288 val macroF1 0.8281 (10.1s)
+linear_svm C=1.0: train acc 1.0000 val acc 0.8139 val macroF1 0.8117 (140.5s)
+==> linear_svm: selected C=0.01 (val macro-F1 0.8739); tuning time 169.4s
+random_forest max_depth=10: train acc 1.0000 val acc 0.8573 val macroF1 0.8559 (3.1s)
+random_forest max_depth=20: train acc 1.0000 val acc 0.8614 val macroF1 0.8613 (3.6s)
+random_forest max_depth=None: train acc 1.0000 val acc 0.8614 val macroF1 0.8616 (3.5s)
+==> random_forest: selected max_depth=None (val macro-F1 0.8616); tuning time 10.5s

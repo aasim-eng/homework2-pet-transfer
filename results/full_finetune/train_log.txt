@@ -1,0 +1,24 @@
+Approach: full_finetune   device: mps
+Environment: {'python': '3.11.9', 'torch': '2.15.0', 'torchvision': '0.29.2', 'scikit-learn': '1.9.1', 'numpy': '2.4.6', 'platform': 'macOS-26.6.2-arm64-arm-64bit', 'cpu': 'Apple M2', 'gpu': 'Apple MPS (integrated GPU of Apple M2)', 'device_used': 'mps'}
+Determinism: {'seed': 42, 'python_random_seeded': True, 'numpy_seeded': True, 'torch_seeded_cpu_cuda_mps': True, 'torch.use_deterministic_algorithms': True, 'deterministic_warn_only': True, 'cudnn.deterministic': True, 'cudnn.benchmark': False}
+train images: 2944, val images: 736
+Final layer: Linear(in_features=1024, out_features=37, bias=True)
+Trainable params: 1,555,781 / total: 1,555,781
+epoch  1 | lr 3.00e-04 | train loss 2.6080 acc 0.3767 | val loss 1.3494 acc 0.6019 macroF1 0.5803 | 35.2s
+epoch  2 | lr 2.97e-04 | train loss 0.8853 acc 0.7615 | val loss 0.7897 acc 0.7595 macroF1 0.7492 | 15.6s
+epoch  3 | lr 2.87e-04 | train loss 0.4980 acc 0.8553 | val loss 0.5597 acc 0.8302 macroF1 0.8268 | 15.5s
+epoch  4 | lr 2.71e-04 | train loss 0.3540 acc 0.8957 | val loss 0.4856 acc 0.8505 macroF1 0.8510 | 15.6s
+epoch  5 | lr 2.50e-04 | train loss 0.2583 acc 0.9253 | val loss 0.4577 acc 0.8614 macroF1 0.8616 | 15.4s
+epoch  6 | lr 2.25e-04 | train loss 0.1930 acc 0.9467 | val loss 0.4212 acc 0.8845 macroF1 0.8849 | 15.5s
+epoch  7 | lr 1.96e-04 | train loss 0.1549 acc 0.9613 | val loss 0.3971 acc 0.8818 macroF1 0.8819 | 15.4s
+epoch  8 | lr 1.66e-04 | train loss 0.1161 acc 0.9745 | val loss 0.3983 acc 0.8764 macroF1 0.8764 | 15.5s
+epoch  9 | lr 1.34e-04 | train loss 0.1124 acc 0.9762 | val loss 0.3847 acc 0.8709 macroF1 0.8709 | 15.5s
+epoch 10 | lr 1.04e-04 | train loss 0.0978 acc 0.9783 | val loss 0.3914 acc 0.8696 macroF1 0.8693 | 15.5s
+epoch 11 | lr 7.50e-05 | train loss 0.0824 acc 0.9817 | val loss 0.3717 acc 0.8954 macroF1 0.8957 | 15.4s
+epoch 12 | lr 4.96e-05 | train loss 0.0736 acc 0.9861 | val loss 0.3813 acc 0.8832 macroF1 0.8836 | 15.5s
+epoch 13 | lr 2.86e-05 | train loss 0.0633 acc 0.9891 | val loss 0.3746 acc 0.8872 macroF1 0.8874 | 15.4s
+epoch 14 | lr 1.30e-05 | train loss 0.0602 acc 0.9901 | val loss 0.3752 acc 0.8859 macroF1 0.8859 | 15.5s
+epoch 15 | lr 3.28e-06 | train loss 0.0634 acc 0.9891 | val loss 0.3747 acc 0.8872 macroF1 0.8873 | 15.4s
+Training time: 251.9s
+Selected epoch 11 (val macro-F1 0.8957, val acc 0.8954)
+model.features changed during training: True

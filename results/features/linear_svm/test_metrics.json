@@ -1,0 +1,21 @@
+{
+  "approach": "features_linear_svm",
+  "test_acc": 0.833469610248024,
+  "test_macro_f1": 0.8308542525118069,
+  "train_acc_clean": 0.9989809782608695,
+  "val_acc": 0.875,
+  "val_macro_f1": 0.873913210325386,
+  "generalization_gap_train_minus_test": 0.1655113680128455,
+  "num_test_images": 3669,
+  "num_test_errors": 611,
+  "train_acc_note": "measured on training images with the plain eval transform (no augmentation), using the selected model",
+  "n_bootstrap": 2000,
+  "test_acc_ci95": [
+    0.821749795584628,
+    0.8457345325701826
+  ],
+  "test_macro_f1_ci95": [
+    0.8182260734875486,
+    0.8418871248327385
+  ]
+}

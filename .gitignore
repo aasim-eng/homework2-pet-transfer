@@ -1,0 +1,19 @@
+# Dataset (download it yourself, see README) — never commit images
+/data/
+# Virtual environment
+.venv/
+# Python cache
+__pycache__/
+*.pyc
+# Large generated files
+results/features/arrays/
+results/smoke/
+checkpoints/smoke/
+*.npy
+.DS_Store
+# Random Forest model is ~248 MB; rebuild with src.train_sklearn
+results/features/random_forest/model.joblib
+
+# Files waiting to be deleted, and the editable report
+_to_delete/
+*.docx

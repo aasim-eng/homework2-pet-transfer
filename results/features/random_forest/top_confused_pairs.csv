@@ -1,0 +1,11 @@
+breed_a,breed_b,total_confusions,a_predicted_as_b,b_predicted_as_a
+Birman,Ragdoll,35,16,19
+British Shorthair,Russian Blue,30,15,15
+American Bulldog,American Pit Bull Terrier,20,0,20
+Basset Hound,Beagle,19,10,9
+Boxer,Staffordshire Bull Terrier,18,2,16
+Chihuahua,Shiba Inu,18,18,0
+Birman,Siamese,16,5,11
+Bengal,Maine Coon,15,6,9
+Chihuahua,Sphynx,15,11,4
+American Bulldog,Staffordshire Bull Terrier,14,0,14

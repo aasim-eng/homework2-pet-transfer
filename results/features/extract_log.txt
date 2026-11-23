@@ -1,0 +1,6 @@
+device: mps
+Trainable params during extraction: 0 / 1,555,781
+train: X (2944, 576), y (2944,), 32.0s
+val: X (736, 576), y (736,), 29.0s
+test: X (3669, 576), y (3669,), 32.0s
+Feature size: 576. Total extraction time: 93.0s

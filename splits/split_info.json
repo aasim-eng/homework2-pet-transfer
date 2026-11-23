@@ -1,0 +1,9 @@
+{
+  "seed": 42,
+  "val_fraction": 0.2,
+  "method": "sklearn.model_selection.train_test_split(stratify=breed labels)",
+  "source_split": "OxfordIIITPet official 'trainval'",
+  "num_train": 2944,
+  "num_val": 736,
+  "indices_refer_to": "positions in OxfordIIITPet(split='trainval') in torchvision order"
+}

@@ -1,0 +1,21 @@
+{
+  "approach": "features_logreg",
+  "test_acc": 0.856909239574816,
+  "test_macro_f1": 0.8550896445698469,
+  "train_acc_clean": 0.9881114130434783,
+  "val_acc": 0.876358695652174,
+  "val_macro_f1": 0.8770120069030661,
+  "generalization_gap_train_minus_test": 0.13120217346866225,
+  "num_test_images": 3669,
+  "num_test_errors": 525,
+  "train_acc_note": "measured on training images with the plain eval transform (no augmentation), using the selected model",
+  "n_bootstrap": 2000,
+  "test_acc_ci95": [
+    0.8460070863995639,
+    0.8680839465794494
+  ],
+  "test_macro_f1_ci95": [
+    0.8437191265430083,
+    0.8655238536590231
+  ]
+}

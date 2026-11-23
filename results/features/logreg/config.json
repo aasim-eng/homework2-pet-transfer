@@ -1,0 +1,69 @@
+{
+  "approach": "features_logreg",
+  "config_file": "configs/features.yaml",
+  "smoke_test": false,
+  "pipeline": "Pipeline(steps=[('scaler', StandardScaler()),\n                ('clf',\n                 LogisticRegression(C=0.01, max_iter=5000, random_state=42))])",
+  "classifier_params": {
+    "C": 0.01,
+    "class_weight": null,
+    "dual": false,
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "l1_ratio": 0.0,
+    "max_iter": 5000,
+    "n_jobs": null,
+    "penalty": "deprecated",
+    "random_state": 42,
+    "solver": "lbfgs",
+    "tol": 0.0001,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "tuned_hyperparameter": "C",
+  "grid": [
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "model_selection_rule": "value of C with the highest validation macro-F1; ties keep the first value in the grid",
+  "selected_value": 0.01,
+  "selected_val_acc": 0.876358695652174,
+  "selected_val_macro_f1": 0.8770120069030661,
+  "selected_train_acc": 0.9881114130434783,
+  "final_model_fit_on": "train split only (same as Approaches 1 and 2)",
+  "scaler_fit_on": "train features only (inside Pipeline.fit)",
+  "feature_dim": 576,
+  "trainable_params_cnn": 0,
+  "total_params_cnn": 1555781,
+  "feature_extraction_time_s": 92.98614966700552,
+  "feature_extraction_time_per_split_s": {
+    "train": 31.985319833001995,
+    "val": 28.953411167000013,
+    "test": 32.04741866700351
+  },
+  "classifier_fit_time_selected_s": 0.13343874999554828,
+  "classifier_tuning_time_total_s": 0.487104708001425,
+  "determinism": {
+    "seed": 42,
+    "python_random_seeded": true,
+    "numpy_seeded": true,
+    "torch_seeded_cpu_cuda_mps": true,
+    "torch.use_deterministic_algorithms": true,
+    "deterministic_warn_only": true,
+    "cudnn.deterministic": true,
+    "cudnn.benchmark": false
+  },
+  "environment": {
+    "python": "3.11.9",
+    "torch": "2.15.0",
+    "torchvision": "0.29.2",
+    "scikit-learn": "1.9.1",
+    "numpy": "2.4.6",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "cpu": "Apple M2",
+    "gpu": "Apple MPS (integrated GPU of Apple M2)",
+    "device_used": "mps"
+  }
+}

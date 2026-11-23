@@ -1,0 +1,29 @@
+# Approach 3 — Frozen MobileNetV3-Small features + scikit-learn classifiers.
+approach: features
+seed: 42
+deterministic: true
+
+data:
+  root: data
+  splits_dir: splits
+  val_fraction: 0.2
+  num_workers: 4
+
+extraction:
+  batch_size: 128            # no augmentation; plain weight transforms only
+  features_dir: results/features/arrays
+
+classifiers:                 # hyperparameter grids, tuned on VALIDATION only
+  logreg:
+    C: [0.001, 0.01, 0.1, 1.0, 10.0]
+    max_iter: 5000
+  linear_svm:
+    C: [0.0001, 0.001, 0.01, 0.1, 1.0]
+    max_iter: 20000
+  random_forest:             # optional classifier
+    max_depth: [10, 20, null]
+    n_estimators: 500
+selection_metric: val_macro_f1
+
+output:
+  results_dir: results/features

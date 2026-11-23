@@ -1,0 +1,11 @@
+breed_a,breed_b,total_confusions,a_predicted_as_b,b_predicted_as_a
+Birman,Ragdoll,30,15,15
+American Pit Bull Terrier,Staffordshire Bull Terrier,23,18,5
+British Shorthair,Russian Blue,18,8,10
+English Cocker Spaniel,English Setter,17,13,4
+American Bulldog,American Pit Bull Terrier,16,2,14
+Bengal,Maine Coon,15,3,12
+Maine Coon,Persian,14,7,7
+Basset Hound,Beagle,13,6,7
+American Bulldog,Staffordshire Bull Terrier,12,2,10
+Bengal,Egyptian Mau,12,5,7

@@ -1,0 +1,26 @@
+{
+  "train": {
+    "min": 74,
+    "min_breed": "Egyptian Mau",
+    "max": 80,
+    "max_breed": "Abyssinian",
+    "mean": 79.57,
+    "max_over_min_ratio": 1.081
+  },
+  "val": {
+    "min": 19,
+    "min_breed": "Bombay",
+    "max": 20,
+    "max_breed": "Abyssinian",
+    "mean": 19.89,
+    "max_over_min_ratio": 1.053
+  },
+  "test": {
+    "min": 88,
+    "min_breed": "Bombay",
+    "max": 100,
+    "max_breed": "American Bulldog",
+    "mean": 99.16,
+    "max_over_min_ratio": 1.136
+  }
+}

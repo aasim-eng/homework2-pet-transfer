@@ -1,0 +1,29 @@
+# Approach 1 — Full fine-tuning: every layer of MobileNetV3-Small is trained.
+approach: full_finetune
+seed: 42
+deterministic: true
+
+data:
+  root: data                 # dataset is downloaded here (not committed)
+  splits_dir: splits         # saved train/val indices
+  val_fraction: 0.2          # 80/20 stratified split of official trainval
+  num_workers: 4
+
+augmentation:                # training set ONLY
+  random_resized_crop_scale: [0.5, 1.0]
+  horizontal_flip: 0.5
+  color_jitter: 0.2
+
+training:
+  loss: cross_entropy
+  optimizer: adamw
+  lr: 0.0003                 # small LR: pre-trained conv layers change slowly
+  weight_decay: 0.01
+  scheduler: cosine          # CosineAnnealingLR over all epochs, stepped per epoch
+  batch_size: 64
+  epochs: 15
+  selection_metric: val_macro_f1   # keep the checkpoint with the best val macro-F1
+
+output:
+  results_dir: results/full_finetune
+  checkpoint_dir: checkpoints/full_finetune
